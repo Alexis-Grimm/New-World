@@ -1,0 +1,18 @@
+<ModMetaData>
+	<name>New World</name>
+	<packageId>Grimm.NewWorld</packageId>
+	<author>Grimm</author>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<modDependencies></modDependencies>
+	<loadBefore></loadBefore>
+	<loadAfter>
+		<li>syrchalis.harvestyieldpatch</li>
+	</loadAfter>
+	<incompatibleWith></incompatibleWith>
+	<description>
+Version 1.0
+A small collection of simple patches and items to improve (in my opinion) some small hindrances with base rimworld.
+	</description>
+</ModMetaData>

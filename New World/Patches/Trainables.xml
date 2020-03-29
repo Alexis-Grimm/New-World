@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--Trainable Defs-->
+        <!--Obedience-->
+            <Operation Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/TrainableDef[defName="Obedience"]/requiredTrainability</xpath>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/TrainableDef[defName="Obedience"]/requiredTrainability</xpath>
+                        <value>
+                            <requiredTrainability>None</requiredTrainability>
+                        </value>
+                    </li>
+                </operations>
+            </Operation>
+        <!--Release-->
+            <Operation Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/TrainableDef[defName="Release"]/requiredTrainability</xpath>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/TrainableDef[defName="Release"]/requiredTrainability</xpath>
+                        <value>
+                            <requiredTrainability>None</requiredTrainability>
+                        </value>
+                    </li>
+                </operations>
+            </Operation>
+        <!--Rescue-->
+            <Operation Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/TrainableDef[defName="Rescue"]/requiredTrainability</xpath>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/TrainableDef[defName="Rescue"]/requiredTrainability</xpath>
+                        <value>
+                            <requiredTrainability>None</requiredTrainability>
+                        </value>
+                    </li>
+                </operations>
+            </Operation>
+        <!--Haul-->
+            <Operation Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/TrainableDef[defName="Haul"]/requiredTrainability</xpath>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/TrainableDef[defName="Haul"]/requiredTrainability</xpath>
+                        <value>
+                            <requiredTrainability>None</requiredTrainability>
+                        </value>
+                    </li>
+                </operations>
+            </Operation>
+</Patch>
