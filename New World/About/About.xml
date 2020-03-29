@@ -8,7 +8,8 @@
 	<modDependencies></modDependencies>
 	<loadBefore></loadBefore>
 	<loadAfter>
-		<li>syrchalis.harvestyieldpatch</li>
+		<li>Saakra.FactionColonies</li>
+		<li>sarg.alphabiomes</li>
 	</loadAfter>
 	<incompatibleWith></incompatibleWith>
 	<description>

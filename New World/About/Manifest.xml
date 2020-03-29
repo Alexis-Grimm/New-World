@@ -9,11 +9,12 @@
     <loadBefore>
     </loadBefore>
     <loadAfter>
-        <li>[SYR]HarvestYieldPatch</li>
+        <li>Empire</li>
+        <li>AlphaBiomes</li>
     </loadAfter>
     <suggests>
     </suggests>
     <showCrossPromotions>true</showCrossPromotions>
-    <manifestUri>https://raw.githubusercontent.com/Alexis-Grimm/Un-Limited/master/Un-Limited/About/Manifest.xml</manifestUri>
-    <downloadUri>https://github.com/Alexis-Grimm/Un-Limited/releases</downloadUri>
+    <manifestUri>https://github.com/Alexis-Grimm/New-World/blob/master/New%20World/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/Alexis-Grimm/New-World/releases</downloadUri>
 </Manifest>
