@@ -15,6 +15,6 @@
     <suggests>
     </suggests>
     <showCrossPromotions>true</showCrossPromotions>
-    <manifestUri>https://github.com/Alexis-Grimm/New-World/blob/master/New%20World/About/Manifest.xml</manifestUri>
+    <manifestUri>https://raw.githubusercontent.com/Alexis-Grimm/New-World/master/New%20World/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/Alexis-Grimm/New-World/releases</downloadUri>
 </Manifest>
