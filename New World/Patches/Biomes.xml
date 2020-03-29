@@ -9,332 +9,355 @@
             <!--Feralisk Infested Jungle-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_FeraliskInfestedJungle</defName>
-                            <label>feralisk infested jungle</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>1.25</li> <!-- Food -->
-                                <li>0.75</li> <!-- Weapons -->
-                                <li>1.5</li> <!-- Apparel -->
-                                <li>1.25</li> <!-- Animals -->
-                                <li>1.5</li> <!-- Logging -->
-                                <li>0.5</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_FeraliskInfestedJungle</defName>
+                                <label>feralisk infested jungle</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>1.25</li> <!-- Food -->
+                                    <li>0.75</li> <!-- Weapons -->
+                                    <li>1.5</li> <!-- Apparel -->
+                                    <li>1.25</li> <!-- Animals -->
+                                    <li>1.5</li> <!-- Logging -->
+                                    <li>0.5</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
             <!--Gallatross Graveyard-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_GallatrossGraveyard"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_GallatrossGraveyard</defName>
+                                <label>gallatross graveyard</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>.25</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>0.5</li> <!-- Animals -->
+                                    <li>0</li> <!-- Logging -->
+                                    <li>1.5</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
                 <li Class="PatchOperationTest">
                     <xpath>Defs/BiomeDef[defName="AB_GallatrossGraveyard"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_GallatrossGraveyard</defName>
-                            <label>gallatross graveyard</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>.25</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>0.5</li> <!-- Animals -->
-                                <li>0</li> <!-- Logging -->
-                                <li>1.5</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
                 </li>
             </li>
             <!--Gelatinous Superorganism-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_GelatinousSuperorganism</defName>
-                            <label>gelatinous superorganism</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>3.0</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1.5</li> <!-- Animals -->
-                                <li>0</li> <!-- Logging -->
-                                <li>0</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_GelatinousSuperorganism</defName>
+                                <label>gelatinous superorganism</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>3.0</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1.5</li> <!-- Animals -->
+                                    <li>0</li> <!-- Logging -->
+                                    <li>0</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
             <!--Mechanoid Intrusion-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_MechanoidIntrusion"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_MechanoidIntrusion</defName>
-                            <label>mechanoid intrusion</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>0</li> <!-- Food -->
-                                <li>2</li> <!-- Weapons -->
-                                <li>0</li> <!-- Apparel -->
-                                <li>0</li> <!-- Animals -->
-                                <li>.25</li> <!-- Logging -->
-                                <li>2</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_MechanoidIntrusion"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_MechanoidIntrusion</defName>
+                                <label>mechanoid intrusion</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>0</li> <!-- Food -->
+                                    <li>2.5</li> <!-- Weapons -->
+                                    <li>0</li> <!-- Apparel -->
+                                    <li>0</li> <!-- Animals -->
+                                    <li>.25</li> <!-- Logging -->
+                                    <li>5</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
             <!--Mycotic Jungle-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_MycoticJungle"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_MycoticJungle</defName>
-                            <label>Mycotic Jungle</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>0.75</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>0.75</li> <!-- Animals -->
-                                <li>.25</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_MycoticJungle"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_MycoticJungle</defName>
+                                <label>Mycotic Jungle</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>0.75</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>0.75</li> <!-- Animals -->
+                                    <li>.25</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
             <!--Ocular Forest-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_MycoticJungle"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_OcularForest</defName>
-                            <label>ocular forest</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>0.5</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>0.5</li> <!-- Animals -->
-                                <li>0.5</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_OcularForest"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_OcularForest</defName>
+                                <label>ocular forest</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>0.5</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>0.5</li> <!-- Animals -->
+                                    <li>0.5</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
             <!--Propane Lakes-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_PropaneLakes"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_PropaneLakes</defName>
-                            <label>propane lakes</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>0</li> <!-- Food -->
-                                <li>0</li> <!-- Weapons -->
-                                <li>1.5</li> <!-- Apparel -->
-                                <li>0.5</li> <!-- Animals -->
-                                <li>0</li> <!-- Logging -->
-                                <li>0</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_PropaneLakes"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_PropaneLakes</defName>
+                                <label>propane lakes</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>0</li> <!-- Food -->
+                                    <li>0</li> <!-- Weapons -->
+                                    <li>1.5</li> <!-- Apparel -->
+                                    <li>0.5</li> <!-- Animals -->
+                                    <li>0</li> <!-- Logging -->
+                                    <li>0</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
             <!--Pyroclastic Conflaguration-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_PyroclasticConflagration"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_PyroclasticConflagration</defName>
-                            <label>pyroclastic conflagration</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>0.25</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>0.5</li> <!-- Apparel -->
-                                <li>0.5</li> <!-- Animals -->
-                                <li>0</li> <!-- Logging -->
-                                <li>1.25</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_PyroclasticConflagration"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_PyroclasticConflagration</defName>
+                                <label>pyroclastic conflagration</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>0.25</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>0.5</li> <!-- Apparel -->
+                                    <li>0.5</li> <!-- Animals -->
+                                    <li>0</li> <!-- Logging -->
+                                    <li>1.25</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
             <!--Rocky Crags-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_RockyCrags"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_RockyCrags</defName>
-                            <label>forsaken crags</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>0.25</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>0.5</li> <!-- Apparel -->
-                                <li>0.5</li> <!-- Animals -->
-                                <li>0</li> <!-- Logging -->
-                                <li>1.25</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_RockyCrags"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_RockyCrags</defName>
+                                <label>forsaken crags</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>0.25</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>0.5</li> <!-- Apparel -->
+                                    <li>0.5</li> <!-- Animals -->
+                                    <li>0</li> <!-- Logging -->
+                                    <li>1.25</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
             <!--Tar Pits-->
             <li Class="PatchOperationSequence">
                 <success>Always</success>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/BiomeDef[defName="AB_TarPits"]</xpath>
-                </li>
-                <li Class="PatchOperationInsert">
-                    <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
-                    <value>
-                        <FactionColonies.BiomeResourceDef>
-                            <defName>AB_TarPits</defName>
-                            <label>tar pits</label>
-                            <canSettle>true</canSettle>
-                            <BaseProductionAdditive> <!-- 0 is default -->
-                                <li>.25</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>0.5</li> <!-- Animals -->
-                                <li>0</li> <!-- Logging -->
-                                <li>1.5</li> <!-- Mining -->
-                            </BaseProductionAdditive>
-                            <BaseProductionMultiplicative> <!-- li is default -->
-                                <li>1</li> <!-- Food -->
-                                <li>1</li> <!-- Weapons -->
-                                <li>1</li> <!-- Apparel -->
-                                <li>1</li> <!-- Animals -->
-                                <li>1</li> <!-- Logging -->
-                                <li>1</li> <!-- Mining -->
-                            </BaseProductionMultiplicative>
-                        </FactionColonies.BiomeResourceDef>
-                    </value>
-                </li>
+                <operations>
+                    <li Class="PatchOperationTest">
+                        <xpath>Defs/BiomeDef[defName="AB_TarPits"]</xpath>
+                    </li>
+                    <li Class="PatchOperationInsert">
+                        <xpath>Defs/FactionColonies.BiomeResourceDef[defName="defaultBiome"]</xpath>
+                        <value>
+                            <FactionColonies.BiomeResourceDef>
+                                <defName>AB_TarPits</defName>
+                                <label>tar pits</label>
+                                <canSettle>true</canSettle>
+                                <BaseProductionAdditive> <!-- 0 is default -->
+                                    <li>.25</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>0.5</li> <!-- Animals -->
+                                    <li>0</li> <!-- Logging -->
+                                    <li>1.5</li> <!-- Mining -->
+                                </BaseProductionAdditive>
+                                <BaseProductionMultiplicative> <!-- li is default -->
+                                    <li>1</li> <!-- Food -->
+                                    <li>1</li> <!-- Weapons -->
+                                    <li>1</li> <!-- Apparel -->
+                                    <li>1</li> <!-- Animals -->
+                                    <li>1</li> <!-- Logging -->
+                                    <li>1</li> <!-- Mining -->
+                                </BaseProductionMultiplicative>
+                            </FactionColonies.BiomeResourceDef>
+                        </value>
+                    </li>
+                </operations>
             </li>
         </operations>
     </Operation>
